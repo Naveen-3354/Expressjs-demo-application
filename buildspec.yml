@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16  
+    commands:
+      - npm install
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+  build:
+    commands:
+     
+  post_build:
+    commands:
+      
+cache:
+  paths:
+    - node_modules
