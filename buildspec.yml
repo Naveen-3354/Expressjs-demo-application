@@ -14,7 +14,11 @@ phases:
      
   post_build:
     commands:
-      
+
+artifacts:
+  type: zip
+  files:
+    - '**/*'
 cache:
   paths:
     - node_modules
