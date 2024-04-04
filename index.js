@@ -16,5 +16,7 @@ app.use(ex.json())
 app.use("/auth", userAuth)
 // // app.use("/category", category )
 app.use("/users",tokenVerify,user)
-
+app.get("/test",async(req,res)=>{
+    res.send("Test Api works.")
+})
 app.listen(port)
